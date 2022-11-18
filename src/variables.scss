@@ -1,0 +1,72 @@
+// Variables
+//
+// Color system
+
+// scss-docs-start gray-color-variables
+$white:    #fff !default;
+$black:    #000 !default;
+// scss-docs-end gray-color-variables
+
+// scss-docs-start theme-color-variables
+$primary:       #3751FF;
+$secondary:     #363740;
+$success:       #29CC97;
+$info:          #F0F1F7;
+$warning:       #FEC400;
+$danger:        #F12B2C;
+$light:         #F7F8FC;
+$dark:          #363740;
+// scss-docs-end theme-color-variables
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                   $white !default;
+$body-color:                #252733;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// scss-docs-start font-variables
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      'Mulish', sans-serif;
+
+$h1-font-size:                1.5rem;
+$h2-font-size:                1.188rem;
+// scss-docs-end font-variables
+
+// Spacers
+$spacers: (
+  0: 0,
+  1: 10px,
+  2: 20px,
+  3: 30px,
+  4: 40px,
+  5: 50px,
+  6: 60px,
+  7: 70px,
+  8: 80px,
+  9: 90px,
+  10: 100px,
+  11: 110px,
+  12: 120px,
+  13: 130px,
+  14: 140px,
+  15: 150px,
+  16: 160px,
+  17: 170px,
+  18: 180px,
+  19: 190px,
+  20: 200px,
+  21: 210px,
+  22: 220px,
+  23: 230px,
+  24: 240px,
+  25: 250px,
+  26: 260px,
+  27: 270px,
+  28: 280px,
+  29: 290px,
+);
