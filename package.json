@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "base": "lite-server --baseDir=\"public\"",
-    "watch": "sass --watch src/scss:public/assets/css",
     "css": "sass --watch src/main.scss public/assets/css/uikit.min.css --style compressed",
-    "dev": "concurrently \"npm run base\" \"npm run watch\" \"npm run css\""
+    "dev": "concurrently \"npm run base\" \"npm run css\""
   },
   "repository": {
     "type": "git",
