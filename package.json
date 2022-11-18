@@ -1,0 +1,27 @@
+{
+  "name": "inm320scc-bootstrap",
+  "version": "1.0.0",
+  "description": "This is my Bootstrap Project.",
+  "main": "index.js",
+  "scripts": {
+    "base": "lite-server --baseDir=\"public\"",
+    "watch": "sass --watch src/scss:public/assets/css",
+    "start": "concurrently \"npm run base\" \"npm run watch\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clcapili/inm320scc-bootstrap.git"
+  },
+  "keywords": [],
+  "author": "Charlene Capili",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clcapili/inm320scc-bootstrap/issues"
+  },
+  "homepage": "https://github.com/clcapili/inm320scc-bootstrap#readme",
+  "devDependencies": {
+    "concurrently": "^7.5.0",
+    "lite-server": "^2.6.1",
+    "sass": "^1.56.1"
+  }
+}
