@@ -23,6 +23,10 @@
         svg {
             margin-right: 12px;
         }
+
+        &:hover {
+            color: $primary;
+        }
     }
 }
 
