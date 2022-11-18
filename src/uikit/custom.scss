@@ -12,7 +12,7 @@
     position: fixed;
     bottom: 0;
     top: 0;
-    padding-top: 40px;
+    padding-top: 34px;
 
     .logo {
         width: 100%;
@@ -36,4 +36,33 @@
     min-height: 100vh;
     padding: 35px 20px;
     overflow: hidden;
+}
+
+.chart-wrapper {
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid $gray-100;
+    
+    .chart-left {
+        padding: 32px;
+        border-right: 1px solid $gray-100;
+
+        .legends {
+            display: flex;
+            justify-content: end;
+    
+            .legend {
+                &:first-child {
+                    margin-right: 30px;
+                }
+            }
+        }
+
+        .chart-main {
+            svg {
+            padding-right: 30px;
+            }
+        }
+    }
+
 }

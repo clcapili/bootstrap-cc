@@ -1,22 +1,24 @@
-.card {
-    align-items: center;
-    text-align: center;
-
-    h2 {
-        color: $gray-300;
-    }
-
-    span {
-        color: $black;
-        font-size: 2.5rem;
-        font-weight: 700;
-        line-height: 1;
-    }
-
-    &:hover {
-        border-color: $primary;
-
-        h2 { color: $primary; }
-        span { color: $primary; }
+a {
+    .card {
+        align-items: center;
+        text-align: center;
+    
+        h2 {
+            color: $gray-300;
+        }
+    
+        span {
+            color: $black;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+    
+        &:hover {
+            border-color: $primary;
+    
+            h2 { color: $primary; }
+            span { color: $primary; }
+        }
     }
 }
