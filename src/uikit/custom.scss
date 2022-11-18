@@ -1,6 +1,35 @@
-.left-sidebar {
-    background-color: $dark;
-    bottom: 0;
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.left-menu {
+    width: 255px;
+    min-width: 255px;
+    z-index: 1000;
+    background: $dark;
     position: fixed;
+    bottom: 0;
     top: 0;
+    padding-top: 40px;
+
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            margin-right: 12px;
+        }
+    }
+}
+
+.content-page {
+    background-color: $light;
+    margin-left: 260px;
+    min-height: 100vh;
+    padding: 35px 20px;
+    overflow: hidden;
 }
