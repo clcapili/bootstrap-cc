@@ -1,3 +1,4 @@
+// all my type styles here
 @each $color, $value in $grays {
     .gray-#{$color} {
         color: $value !important;

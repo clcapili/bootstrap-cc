@@ -1,4 +1,4 @@
-/* My custom styles here */
+/* my general custom styles here */
 .wrapper {
     width: 100%;
     height: 100%;
@@ -206,6 +206,7 @@ nav.sidebar-menu {
         .list-group {
             .list-group-item {
                 border: none;
+                min-height: 63px;
 
                 &:not(:last-child) {
                     border-bottom: 1px solid $gray-100;
@@ -221,10 +222,11 @@ nav.sidebar-menu {
         .tasks {
             padding: 0 2rem;
         }
-        
+
         .list-group {
             .list-group-item {
                 border: none;
+                min-height: 63px;
 
                 &:not(:last-child) {
                     border-bottom: 1px solid $gray-100;
@@ -232,6 +234,7 @@ nav.sidebar-menu {
 
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
             }
         }
     }

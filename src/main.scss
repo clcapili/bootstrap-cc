@@ -1,7 +1,9 @@
+// added bootstrap variables for full control
 @import "uikit/variables.scss";
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+// organized my bootstrap components modifications
 @import "uikit/card.scss";
 @import "uikit/custom.scss";
 @import "uikit/font.scss";
