@@ -487,7 +487,7 @@
                     <div class="row">
                         <div class="col-xl-6 unresolved-tickets mb-3 mb-xl-0">
                             <div class="card">
-                                <div class="card-body px-0">
+                                <div class="card-body px-0 pb-2">
                                     <div class="row tickets">
                                         <div class="col-7">
                                             <h2>Unresolved tickets</h2>
@@ -523,7 +523,7 @@
 
                         <div class="col-xl-6 all-tasks mb-3 mb-xl-0">
                             <div class="card">
-                                <div class="card-body px-0">
+                                <div class="card-body px-0 pb-2">
                                     <div class="row tasks">
                                         <div class="col-7">
                                             <h2>Tasks</h2>
@@ -534,6 +534,47 @@
                                             <a href="/">View all</a> 
                                         </div>
                                     </div>
+
+                                    <ul class="list-group">
+                                        <li class="list-group-item fs-5 fw-semibold">
+                                            <input class="form-control py-0" type="text" placeholder="Create new task" aria-label="Create new task">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="24" height="24" rx="8" fill="#F0F1F7"/>
+                                                <path d="M12 7V17" stroke="#9FA2B4" stroke-width="2" stroke-linecap="round"/>
+                                                <path d="M17 12L7 12" stroke="#9FA2B4" stroke-width="2" stroke-linecap="round"/>
+                                            </svg> 
+                                        </li>
+                                        <li class="list-group-item fs-5 fw-semibold">
+                                            <div class="form-check">
+                                                <input class="form-check-input me-1" type="checkbox" value="" id="urgentBtn">
+                                                <label class="form-check-label" for="urgentBtn">
+                                                    Finish ticket update
+                                                </label>
+                                            </div>
+
+                                            <a class="btn btn-warning fw-bold text-uppercase text-white" href="/" role="button">Urgent</a>
+                                        </li>
+                                        <li class="list-group-item fs-5 fw-semibold">
+                                            <div class="form-check">
+                                                <input class="form-check-input me-1" type="checkbox" value="" id="newBtn">
+                                                <label class="form-check-label" for="newBtn">
+                                                    Create new ticket example
+                                                </label>
+                                            </div>
+
+                                            <a class="btn btn-success fw-bold text-uppercase text-white" href="/" role="button">New</a>
+                                        </li>
+                                        <li class="list-group-item fs-5 fw-semibold pb-0">
+                                            <div class="form-check">
+                                                <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                <label class="form-check-label" for="flexCheckChecked">
+                                                    Update ticket report
+                                                </label>
+                                            </div>
+
+                                            <a class="btn btn-info fw-bold text-uppercase gray-400" href="/" role="button">Default</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
