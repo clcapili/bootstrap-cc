@@ -537,12 +537,62 @@
 
                                     <ul class="list-group">
                                         <li class="list-group-item fs-5 fw-semibold">
-                                            <input class="form-control py-0" type="text" placeholder="Create new task" aria-label="Create new task">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect width="24" height="24" rx="8" fill="#F0F1F7"/>
-                                                <path d="M12 7V17" stroke="#9FA2B4" stroke-width="2" stroke-linecap="round"/>
-                                                <path d="M17 12L7 12" stroke="#9FA2B4" stroke-width="2" stroke-linecap="round"/>
-                                            </svg> 
+                                            <input class="form-control py-0 create-task" type="text" placeholder="Create new task" aria-label="Create new task">
+
+                                            <button type="button" class="btn btn-info p-0" data-bs-toggle="modal" data-bs-target="#taskModal">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="24" height="24" rx="8" fill="#F0F1F7"/>
+                                                    <path d="M12 7V17" stroke="#9FA2B4" stroke-width="2" stroke-linecap="round"/>
+                                                    <path d="M17 12L7 12" stroke="#9FA2B4" stroke-width="2" stroke-linecap="round"/>
+                                                </svg> 
+                                            </button>
+
+                                            <!-- main modal start -->
+                                            <div class="modal fade" id="taskModal" tabindex="-1" aria-labelledby="createTask" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h2 class="modal-title fs-5" id="createTask">Projects / Create a task</h2>
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="public">
+                                                                <label class="form-check-label" for="public">Public</label>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- modal body start -->
+                                                        <div class="modal-body">
+                                                            <h2>Project: Dashboard Kit</h2>
+                                                            <div class="mb-3">
+                                                                <label for="task" class="form-label">Task name</label>
+                                                                <input type="text" class="form-control" id="task" placeholder="Type the task name" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="description" class="form-label">Task description</label>
+                                                                <textarea class="form-control" id="description" rows="3" placeholder="Type the task description"></textarea>
+                                                            </div>
+
+                                                            <label for="priority" class="form-label d-block">Priority Level </label>
+                                                            <div class="btn-group" role="group" aria-label="priority level">
+                                                                <input type="radio" class="btn-check" name="priority" id="priority1" autocomplete="off" checked>
+                                                                <label class="btn btn-outline-success" for="priority1">Normal</label>
+                                                              
+                                                                <input type="radio" class="btn-check" name="priority" id="priority2" autocomplete="off">
+                                                                <label class="btn btn-outline-warning" for="priority2">Low</label>
+                                                              
+                                                                <input type="radio" class="btn-check" name="priority" id="priority3" autocomplete="off">
+                                                                <label class="btn btn-outline-danger" for="priority3">High</label>
+                                                            </div>
+                                                        </div>
+                                                        <!-- modal body end -->
+
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-info" data-bs-dismiss="modal">Discard</button>
+                                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Add task</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- main modal end -->
                                         </li>
                                         <li class="list-group-item fs-5 fw-semibold">
                                             <div class="form-check">

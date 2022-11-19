@@ -164,15 +164,11 @@ $dropdown-link-hover-bg:            $primary;
 // List group
 
 // scss-docs-start form-input-variables
-$input-padding-x:                       0;
 $input-font-size:                       0.875rem !default;
 $input-font-weight:                     600;
 
-$input-bg:                              transparent;
-
 $input-color:                           $body-color !default;
-$input-border-color:                    transparent;
-$input-border-width:                    0;
+$input-border-color:                    $gray-200;
 
 $input-focus-border-color:              tint-color($primary, 50%) !default;
 
