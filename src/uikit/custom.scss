@@ -106,10 +106,6 @@ nav.sidebar-menu {
 }
 
 .topbar-menu {
-    h1 {
-        margin-bottom: 0;
-    }
-
     .topbar-menu-right {
         >a {
             margin-right: 30px;
@@ -117,6 +113,25 @@ nav.sidebar-menu {
         .dropdown {
             padding-left: 20px;
             border-left: 1px solid $gray-100;
+        }
+    }
+    
+    .search-icon {
+        &:hover {
+            svg circle {
+                stroke: $dark;
+            }
+            svg path {
+                stroke: $dark;
+            }
+        }
+    }
+
+    .notifications-icon {
+        &:hover {
+            svg path {
+                fill: $dark;
+            }
         }
     }
 
@@ -146,7 +161,6 @@ nav.sidebar-menu {
     background-color: $light;
     margin-left: 70px;
     min-height: 100vh;
-    padding: 30px 20px;
     overflow: hidden;
 
     @media (min-width: 992px) {
@@ -163,35 +177,14 @@ nav.sidebar-menu {
 
             .chart-left {
                 padding: 32px;
-    
-                .legends {
-                    display: flex;
-                    justify-content: end;
-            
-                    .legend {
-                        &:first-child {
-                            margin-right: 30px;
-                        }
-                    }
-                }
-    
-                .chart-main {
-                    svg {
-                    padding-right: 30px;
-                    }
-                }
             }
         }
 
         .chart-right {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-
             .stat {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                text-align: center;
                 padding: 35px;
 
                 &:not(:last-child) {

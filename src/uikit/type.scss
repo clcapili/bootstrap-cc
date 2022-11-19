@@ -1,1 +1,7 @@
 h1 { font-weight: 700; }
+
+@each $color, $value in $grays {
+    .gray-#{$color} {
+        color: $value !important;
+    }
+}
