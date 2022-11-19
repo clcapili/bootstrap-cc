@@ -205,15 +205,15 @@ nav.sidebar-menu {
 
         .list-group {
             .list-group-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 border: none;
                 min-height: 63px;
 
                 &:not(:last-child) {
                     border-bottom: 1px solid $gray-100;
                 }
-
-                display: flex;
-                justify-content: space-between;
             }
         }
     }
@@ -230,16 +230,15 @@ nav.sidebar-menu {
 
         .list-group {
             .list-group-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 border: none;
                 min-height: 63px;
 
                 &:not(:last-child) {
                     border-bottom: 1px solid $gray-100;
                 }
-
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
             }
         }
     }

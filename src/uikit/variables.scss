@@ -129,9 +129,9 @@ $form-check-radio-border-radius:          50% !default;
 // For each of Bootstrap's buttons, define text, background, and border color.
 
 // scss-docs-start btn-variables
-$btn-padding-y:               0.313rem !default;
+$btn-padding-y:               0.75rem !default;
 $btn-padding-x:               0.75rem !default;
-$btn-font-size:               0.688rem !default;
+$btn-font-size:               0.875rem !default;
 $btn-line-height:             1 !default;
 // scss-docs-end btn-variables
 
@@ -179,6 +179,6 @@ $input-plaintext-color:                 $body-color !default;
 // scss-docs-start list-group-variables
 $list-group-border-radius:          0;
 
-$list-group-item-padding-y:         1.125rem !default;
+$list-group-item-padding-y:         1rem !default;
 $list-group-item-padding-x:         2rem !default;
 // scss-docs-end list-group-variables
