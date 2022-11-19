@@ -1,18 +1,25 @@
+/* My custom styles here */
 .wrapper {
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-.left-menu {
-    width: 255px;
-    min-width: 255px;
-    z-index: 1000;
-    background: $dark;
+nav.sidebar-menu {
     position: fixed;
+    z-index: 1000;
     bottom: 0;
     top: 0;
-    padding-top: 34px;
+    width: 70px;
+    min-width: 70px;
+    z-index: 5;
+    padding-top: 37px;
+
+    @media (min-width: 992px) {
+        width: 255px;
+        min-width: 255px;
+        padding-top: 37px;
+    }
 
     .logo {
         width: 100%;
@@ -21,48 +28,187 @@
         align-items: center;
 
         svg {
-            margin-right: 12px;
+            margin-right: 0;
+        }
+
+        @media (min-width: 992px) {
+
+            svg {
+                margin-right: 12px;
+            }
         }
 
         &:hover {
             color: $primary;
         }
     }
+
+    ul.nav {
+        .nav-item {
+            .nav-link {
+                border-left: 3px solid $dark;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+    
+                @media (min-width: 992px) {
+                    padding: 1.125rem 2.5rem;
+                    justify-content: flex-start;
+                }
+    
+                svg {
+                    margin-right: 0;
+                    
+                    @media (min-width: 992px) {
+                        margin-right: 24px;
+                    }
+        
+                    path {
+                        fill: $gray-400;
+                    }
+                }
+    
+                span { 
+                    display: none;
+    
+                    @media (min-width: 992px) {
+                        display: block;
+                    }
+                }
+        
+                &:hover {
+                    background-color: rgba(159, 162, 180, 0.08);
+                    color: $gray-200;
+                    border-left: 3px solid $gray-200;
+                    
+                    svg {
+                        path {
+                            fill: $gray-200;
+                        }
+                    }
+                }
+            }
+    
+            .nav-link.active {
+                background-color: rgba(159, 162, 180, 0.08);
+                color: $gray-200;
+                border-left: 3px solid $gray-200;
+                
+                svg {
+                    path {
+                        fill: $gray-200;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.topbar-menu {
+    h1 {
+        margin-bottom: 0;
+    }
+
+    .topbar-menu-right {
+        >a {
+            margin-right: 30px;
+        }
+        .dropdown {
+            padding-left: 20px;
+            border-left: 1px solid $gray-100;
+        }
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+
+        p {
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-right: 14px;
+            margin-bottom: 0;
+        }
+
+        img {
+            border: 1.5px solid $gray-100;
+            border-radius: 50px;
+            padding: 2px;
+            box-shadow: 10px 10px 25px 0 rgba(0,0,0,0.14);
+            -webkit-box-shadow: 10px 10px 25px 0 rgba(0,0,0,0.14);
+            -moz-box-shadow: 10px 10px 25px 0 rgba(0,0,0,0.14);
+        }
+    }
 }
 
 .content-page {
     background-color: $light;
-    margin-left: 260px;
+    margin-left: 70px;
     min-height: 100vh;
-    padding: 35px 20px;
+    padding: 30px 20px;
     overflow: hidden;
-}
 
-.chart-wrapper {
-    background-color: #fff;
-    border-radius: 8px;
-    border: 1px solid $gray-100;
+    @media (min-width: 992px) {
+        margin-left: 260px;
+    }
     
-    .chart-left {
-        padding: 32px;
-        border-right: 1px solid $gray-100;
+    .chart-wrapper {
+        .chart-left-border {
+            border-right: none;
+            
+            @media (min-width: 1200px) {
+                border-right: 1px solid $gray-100;
+            }
 
-        .legends {
-            display: flex;
-            justify-content: end;
+            .chart-left {
+                padding: 32px;
     
-            .legend {
-                &:first-child {
-                    margin-right: 30px;
+                .legends {
+                    display: flex;
+                    justify-content: end;
+            
+                    .legend {
+                        &:first-child {
+                            margin-right: 30px;
+                        }
+                    }
+                }
+    
+                .chart-main {
+                    svg {
+                    padding-right: 30px;
+                    }
                 }
             }
         }
 
-        .chart-main {
-            svg {
-            padding-right: 30px;
+        .chart-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .stat {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 35px;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $gray-100;
+                }
+
+                .lead {
+                    color: $gray-400;
+                    margin-bottom: 6px;
+                }
             }
         }
     }
+}
 
+// border opacity utility override
+.border-bottom {
+    --bs-border-opacity: .06;
+    border-color: rgba($gray-100, var(--bs-border-opacity)) !important;
 }

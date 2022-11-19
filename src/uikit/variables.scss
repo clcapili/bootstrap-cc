@@ -5,8 +5,10 @@
 // scss-docs-start gray-color-variables
 $white:    #fff !default;
 $gray-100: #DFE0EB !default;
-$gray-200: #A4A6B3 !default;
-$gray-300: #9FA2B4 !default;
+$gray-200: #DDE2FF !default;
+$gray-300: #A4A6B3 !default;
+$gray-400: #9FA2B4 !default;
+$gray-500: #60626E !default;
 $black:    #252733 !default;
 // scss-docs-end gray-color-variables
 
@@ -101,9 +103,10 @@ $prefix:                      bs- !default;
 
 // Components
 
-// scss-docs-start border-radius-variables
+// scss-docs-start border-variables
+$border-color:                $gray-100 !default;
 $border-radius:               8px !default;
-// scss-docs-end border-radius-variables
+// scss-docs-end border-variables
 
 // Cards
 
@@ -113,3 +116,20 @@ $card-spacer-x:                     $spacer !default;
 $card-border-color:                 $gray-100;
 $card-border-radius:                $border-radius !default;
 // scss-docs-end card-variables
+
+// Navs
+
+// scss-docs-start nav-variables
+$nav-link-padding-y:                1.125rem !default;
+$nav-link-padding-x:                2.5rem !default;
+$nav-link-color:                    $gray-300;
+$nav-link-hover-color:              $gray-200;
+// scss-docs-end nav-variables
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+// scss-docs-start dropdown-variables
+$dropdown-link-hover-color:         $white;
+$dropdown-link-hover-bg:            $primary;
