@@ -113,6 +113,10 @@ nav.sidebar-menu {
         .dropdown {
             padding-left: 20px;
             border-left: 1px solid $gray-100;
+
+            li .text-danger:hover {
+                background-color: $light;
+            }
         }
     }
     
@@ -140,7 +144,6 @@ nav.sidebar-menu {
         align-items: center;
 
         p {
-            font-weight: 600;
             margin-right: 14px;
             margin-bottom: 0;
         }
