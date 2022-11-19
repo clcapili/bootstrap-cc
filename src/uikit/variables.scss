@@ -80,11 +80,19 @@ $spacers: (
 // Font, line-height, and color for body text, headings, and more.
 
 // scss-docs-start font-variables
-// stylelint-disable value-keyword-case
 $font-family-sans-serif:      'Mulish', sans-serif;
 
 $h1-font-size:                1.5rem;
 $h2-font-size:                1.188rem;
+
+$font-sizes: (
+  1: 2.5rem, // 40px
+  2: 1.5rem, // 24px
+  3: 1.188rem, // 19px
+  4: 1rem, // 16px
+  5: 0.875rem, // 14px
+  6: 0.75rem // 12px
+);
 // scss-docs-end font-variables
 
 // scss-docs-start type-variables
@@ -111,8 +119,8 @@ $border-radius:               8px !default;
 // Cards
 
 // scss-docs-start card-variables
-$card-spacer-y:                     $spacer !default;
-$card-spacer-x:                     $spacer !default;
+$card-spacer-y:                     2rem !default;
+$card-spacer-x:                     2rem !default;
 $card-border-color:                 $gray-100;
 $card-border-radius:                $border-radius !default;
 // scss-docs-end card-variables
@@ -133,3 +141,12 @@ $nav-link-hover-color:              $gray-200;
 // scss-docs-start dropdown-variables
 $dropdown-link-hover-color:         $white;
 $dropdown-link-hover-bg:            $primary;
+
+// List group
+
+// scss-docs-start list-group-variables
+$list-group-border-radius:          0;
+
+$list-group-item-padding-y:         1.125rem !default;
+$list-group-item-padding-x:         2rem !default;
+// scss-docs-end list-group-variables

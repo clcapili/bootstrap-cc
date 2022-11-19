@@ -140,7 +140,6 @@ nav.sidebar-menu {
         align-items: center;
 
         p {
-            font-size: 0.875rem;
             font-weight: 600;
             margin-right: 14px;
             margin-bottom: 0;
@@ -195,6 +194,44 @@ nav.sidebar-menu {
                     color: $gray-400;
                     margin-bottom: 6px;
                 }
+            }
+        }
+    }
+
+    .unresolved-tickets {
+        .tickets {
+            padding: 0 2rem;
+        }
+
+        .list-group {
+            .list-group-item {
+                border: none;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $gray-100;
+                }
+
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .all-tasks {
+        .tasks {
+            padding: 0 2rem;
+        }
+        
+        .list-group {
+            .list-group-item {
+                border: none;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $gray-100;
+                }
+
+                display: flex;
+                justify-content: space-between;
             }
         }
     }
