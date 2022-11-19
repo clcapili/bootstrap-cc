@@ -242,6 +242,10 @@ nav.sidebar-menu {
                 &:not(:last-child) {
                     border-bottom: 1px solid $gray-100;
                 }
+
+                .badge {
+                    padding: 5px 12px;
+                }
             }
         }
     }
