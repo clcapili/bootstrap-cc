@@ -1,4 +1,8 @@
 // all my type styles here
+a {
+    font-size: 0.875rem;
+}
+
 @each $color, $value in $grays {
     .gray-#{$color} {
         color: $value !important;
