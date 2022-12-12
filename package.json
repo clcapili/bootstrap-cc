@@ -6,7 +6,7 @@
   "scripts": {
     "base": "lite-server --baseDir=\"public\"",
     "css": "sass --watch src/main.scss public/assets/css/uikit.min.css --style compressed",
-    "dev": "concurrently \"npm run base\" \"npm run css\""
+    "start": "concurrently \"npm run base\" \"npm run css\""
   },
   "repository": {
     "type": "git",
