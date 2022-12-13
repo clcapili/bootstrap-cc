@@ -1,0 +1,73 @@
+{
+    "cards": [
+        {
+            "title": "Overdue",
+            "stat": "16"
+        },
+        {
+            "title": "Open",
+            "stat": "43"
+        },
+        {
+            "title": "On hold",
+            "stat": "64"
+        },
+        {
+            "title": "Completed",
+            "stat": "19"
+        },
+        {
+            "title": "Resolved",
+            "stat": "65"
+        },
+        {
+            "title": "Critical",
+            "stat": "24"
+        },
+        {
+            "title": "Priority",
+            "stat": "2"
+        }
+    ],
+    "chartTitle": "Today's trends",
+    "chartCards": [
+        {
+            "title": "Resolved",
+            "stat": "449"
+        },
+        {
+            "title": "Received",
+            "stat": "426"
+        },
+        {
+            "title": "Average first response time",
+            "stat": "33m"
+        },
+        {
+            "title": "Average response time",
+            "stat": "3h 8m"
+        },
+        {
+            "title": "Resolution within SLA",
+            "stat": "94%"
+        }
+    ],
+    "unresolvedTickets": [
+        {
+            "status": "Waiting on Feature Request",
+            "stat": "4238"
+        },
+        {
+            "status": "Awaiting Customer Response",
+            "stat": "1005"
+        },
+        {
+            "status": "Awaiting Developer Fix",
+            "stat": "914"
+        },
+        {
+            "status": "Pending",
+            "stat": "281"
+        }
+    ]
+}
