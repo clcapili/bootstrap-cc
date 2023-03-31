@@ -1,5 +1,3 @@
-# inm320scc-bootstrap
+# Responsive web page using Bootstrap framework
 
-This is my first public repo.
-
-For educational purpose only.
+In this project, Bootstrap framework was used to create a responsive web page
